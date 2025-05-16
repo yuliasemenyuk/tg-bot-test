@@ -1,0 +1,44 @@
+{
+  "name": "tg-bot-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "test": "vitest",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuliasemenyuk/tg-bot-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuliasemenyuk/tg-bot-test/issues"
+  },
+  "homepage": "https://github.com/yuliasemenyuk/tg-bot-test#readme",
+  "dependencies": {
+    "bullmq": "^5.52.2",
+    "convict": "^6.2.4",
+    "convict-format-with-validator": "^6.2.0",
+    "dotenv": "^16.5.0",
+    "dotenv-expand": "^12.0.2",
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/convict": "^6.1.6",
+    "@types/convict-format-with-validator": "^6.0.5",
+    "@types/express": "^5.0.1",
+    "@types/node-telegram-bot-api": "^0.64.8",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1",
+    "ts-node": "^10.9.2",
+    "vitest": "^3.1.3"
+  }
+}
